@@ -40,24 +40,23 @@ To train an agent using the code in this repository, you will need to follow the
         checkpoint.pth
         dqn_agent.py
         model.py
-        navigation.ipynb
         unity-environment.log
         README.md
-        Report.md
+        Report.ipynb
     __pycache__/
  ```
 4. Place the environment file `Banana_Linux.zip` in the `p1_navigation/` folder and unzip (decompress) the file:
 ``` bash
     $ unzip Banana_Linux.zip
 ```
-5. Launch `navigation.ipynb` in Jupyter and start training the agent by executing the code in the notebook. 
+5. Launch `Report.ipynb` in Jupyter and start training the agent by executing the code in the notebook. 
 ``` bash
     $ jupyter notebook
 ```
 ### Understanding the files
 1. `dqn_agent.py` contains the `Agent` and `ReplayBuffer` classes for the agent to interact with the environment.
 2. `model.py` contains the Pytorch neural network used to approximate the Q-value functions that the agent will be using.
-3. `navigation.ipynb` is the code entry point for starting the environment and the training loop.
+3. `Report.ipynb` is the code entry point for starting the environment and the training loop.
 4. `unity-environment.log` is the log file that is created during the training loop.
 5. `checkpoint.pth` contains the weights of the Pytorch model once the environment is successfully solved.
 6. `Report.md` provides a description of the implementation (learning algorithm, hyperparameters etc).
